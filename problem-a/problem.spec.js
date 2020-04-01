@@ -16,7 +16,7 @@ describe('Used test-driven development', () => {
   test('Used Jest to pre-test code, saved in `pretest.txt`', () => {
     const path = __dirname + '/pretest.txt'
     const pretest = fs.readFileSync(path, 'utf-8');
-    expect(pretest).toMatch(/Tests: +17 failed, 1 passed, 18 total/)
+    expect(pretest).toMatch(/FAIL +problem-a\/problem\.spec\.js/)
   })
 })
 
